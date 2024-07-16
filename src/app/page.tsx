@@ -28,7 +28,7 @@ export default function Home() {
        let message = `Transaction hash: ${transactionReceipt.transactionHash}`; 
        Swal.fire({
         title: 'Successful',
-        text: 'You have received the tokens before',
+        text: message,
         icon: 'success',
         confirmButtonText: 'continue'
       })
