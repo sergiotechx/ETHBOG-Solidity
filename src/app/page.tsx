@@ -44,7 +44,7 @@ export default function Home() {
         const delivered: boolean = await readContract({
           contract,
           method: "function hasRequested(address) view returns (bool)",
-          params: [activeAccount?.address]
+          params: [activeAccount?.address as string]
         })
         console.log('delivered',delivered);
         if (delivered) {
