@@ -1,59 +1,26 @@
+**Programa final  para el curso Desarrollo parte II**
 
-![tw-banner](https://github.com/thirdweb-example/next-starter/assets/57885104/20c8ce3b-4e55-4f10-ae03-2fe4743a5ee8)
+**Contratos:**
 
-# thirdweb-next-starter
+**ETHBOG.sol:  ( 0xAbBC523E3eBdB0Ed328631B1cDFfEb70f1eAe0bC)**
 
-Starter template to build an onchain react native app with [thirdweb](https://thirdweb.com/) and [next](https://nextjs.org/).
+*   Token  erc-20 hecho con las librerias de openzeppelin
+*   Maneja do por un un dueño que puede pausar el contrato
+*   Se definen 6 decimales en el token
+*   Se pueden genear más tokens
 
-## Installation
+**TokenDistributor: (0x658cC355585590b4db1c2c96f28813c0E72f7a8c)**
 
-Install the template using [thirdweb create](https://portal.thirdweb.com/cli/create)
+*   Contrato que maneja una “especie” de  airdrop el cual sólo se puede reclamar 1 vez.
+*   En cualquier momento el dueño del contrato puede retirar todas las monedas que subyacen en el contrato.
 
-```bash
-  npx thirdweb create app --next
-```
+**Frontend https://ethbogsolidity-curso-parte-2.vercel.app/**
 
-## Environment Variables
+Realizado con NextJS 14.1.0
 
-To run this project, you will need to add the following environment variables to your .env file:
+Como  libreria de conexión se usó Thidweb 5, esta por debajo maneja la libreria VIEM
 
-`CLIENT_ID`
+**Instalación y puesta en ejecución**
 
-To learn how to create a client ID, refer to the [client documentation](https://portal.thirdweb.com/typescript/v5/client). 
-
-## Run locally
-
-Install dependencies
-
-```bash
-yarn
-```
-
-Start development server
-
-```bash
-yarn dev
-```
-
-Create a production build
-
-```bash
-yarn build
-```
-
-Preview the production build
-
-```bash
-yarn start
-```
-
-## Resources
-
-- [Documentation](https://portal.thirdweb.com/typescript/v5)
-- [Templates](https://thirdweb.com/templates)
-- [YouTube](https://www.youtube.com/c/thirdweb)
-- [Blog](https://blog.thirdweb.com)
-
-## Need help?
-
-For help or feedback, please [visit our support site](https://thirdweb.com/support)
+*   _yarn install_
+*   _yarn run dev_
