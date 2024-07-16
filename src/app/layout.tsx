@@ -17,10 +17,12 @@ export default function RootLayout({
   return (
     <html >
       <body >
-      <PrimeReactProvider>
-        <ThirdwebProvider value={value}>{children}</ThirdwebProvider>
+      <PrimeReactProvider value={value}>
+        <ThirdwebProvider >{children}</ThirdwebProvider>
         </PrimeReactProvider>
       </body>
     </html>
   ); 
 }
+
+
