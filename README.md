@@ -24,3 +24,5 @@ Como  libreria de conexión se usó Thidweb 5, esta por debajo maneja la librer
 
 *   _yarn install_
 *   _yarn run dev_
+
+**Video:** [https://youtu.be/_P9eYKaEtDQ](https://youtu.be/_P9eYKaEtDQ)
